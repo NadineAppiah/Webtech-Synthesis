@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Learning Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  <header class="site-header">
-    <h1>My Learning Hub</h1>
-    <p class="tagline">My Web Technologies Journey</p>
+    <header class="site-header">
+        <h1>My Learning Hub</h1>
+        <p class="tagline">My Web Technologies Journey</p>
 
-    <nav class="site-nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#lessons">Lessons</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+        <nav class="site-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <section id="home" class="section">
-      <h2>Welcome to My Learning Hub!</h2>
-      <p>
-        This website showcases what I have learned in Web Technologies,
-        from HTML and CSS to JavaScript.
-      </p>
-      <button id="welcomeButton" class="btn">Click Me!</button>
-      <p id="welcomeMessage" class="message" aria-live="polite"></p>
-    </section>
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to My Learning Hub!</h2>
+            <p>
+                This website showcases what I have learned in Web Technologies,
+                from HTML and CSS to JavaScript.
+            </p>
+            <button id="welcomeButton" class="btn">Click Me!</button>
+            <p id="welcomeMessage" class="message" aria-live="polite"></p>
+        </section>
 
-    <section id="about" class="section">
-      <h2>About This Project</h2>
-      <p>
-        This project brings together the concepts I have studied throughout
-        my Web Technologies lessons.
-      </p>
-    </section>
+        <section id="about" class="section">
+            <h2>About This Project</h2>
+            <p>
+                This project brings together the concepts I have studied throughout
+                my Web Technologies lessons.
+            </p>
+        </section>
 
-    <section id="lessons" class="section">
-      <h2>What I Have Learned</h2>
+        <section id="lessons" class="section">
+            <h2>What I Have Learned</h2>
 
-      <div class="lesson-grid">
-        <article class="lesson-card">
-          <h3>HTML</h3>
-          <p>Creating webpages with headings, paragraphs, links, images, lists and forms.</p>
-          <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
-          <p class="details" hidden>Semantic tags like header, nav, main and section give a page a clear structure.</p>
-        </article>
+            <div class="lesson-grid">
+                <article class="lesson-card">
+                    <img src="Images/abraham-quispe-DI93sfGJfBU-unsplash.jpg" alt="Web development technologies"
+                        class="lesson-image">
+                    <h3>HTML</h3>
+                    <p>Creating webpages with headings, paragraphs, links, images, lists and forms.</p>
+                    <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
+                    <p class="details" hidden>Semantic tags like header, nav, main and section give a page a clear
+                        structure.</p>
+                </article>
 
-        <article class="lesson-card">
-          <h3>CSS</h3>
-          <p>Styling webpages with colours, fonts, spacing, layouts and responsive design.</p>
-          <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
-          <p class="details" hidden>Flexbox and Grid handle layout, and media queries adjust the design for smaller screens.</p>
-        </article>
+                <article class="lesson-card">
+                    <img src="Images/creatvise-K7igmbb11NQ-unsplash.jpg" alt="Website design displayed on a laptop"
+                        class="lesson-image">
+                    <h3>CSS</h3>
+                    <p>Styling webpages with colours, fonts, spacing, layouts and responsive design.</p>
+                    <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
+                    <p class="details" hidden>Flexbox and Grid handle layout, and media queries adjust the design for
+                        smaller screens.</p>
+                </article>
 
-        <article class="lesson-card">
-          <h3>JavaScript</h3>
-          <p>Adding interactivity with variables, operators, functions, conditions and events.</p>
-          <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
-          <p class="details" hidden>Event listeners let a page respond to clicks, typing and form submissions.</p>
-        </article>
-      </div>
-    </section>
+                <article class="lesson-card">
+                    <img src="Images/growtika-yGQmjh2uOTg-unsplash.jpg" alt="JavaScript programming code"
+                        class="lesson-image">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity with variables, operators, functions, conditions and events.</p>
+                    <button class="btn btn-small toggle-details" aria-expanded="false">Show more</button>
+                    <p class="details" hidden>Event listeners let a page respond to clicks, typing and form submissions.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <form id="contactForm" novalidate>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-        <span class="error" id="nameError"></span>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        <span class="error" id="emailError"></span>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-      <p id="formMessage" class="message" aria-live="polite"></p>
-    </section>
-  </main>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="formMessage" class="message" aria-live="polite"></p>
+        </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 My Learning Hub | Web Technologies Synthesis</p>
-  </footer>
+    <footer class="site-footer">
+        <p>&copy; 2026 My Learning Hub | Web Technologies Synthesis</p>
+    </footer>
 
 </body>
+
 </html>
